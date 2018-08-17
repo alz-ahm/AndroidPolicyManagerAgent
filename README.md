@@ -2,7 +2,7 @@
 This app intended to use to insure certain policies are applied to the phone and
 they cannot be changed. Example of that would be user can't turn off the location. 
 
-#How the app work
+# How the app work
 App consist of four different parts:
 * Policies : Each policy is responsible for applying certain condition, like LocationPolicy to turn 
 on the location or AirplanePolicy to turn off the airplane mode. Policies do not make any decisions
@@ -18,9 +18,9 @@ to be run latter to make sure after certain time the system gets back to the cor
 important because we don't have broadcast receiver for all state changes, for example since android 7.0
 we don't get any broadcast for mobile data state change.
 
-#Installation
+# Installation
 This app should be installed as a system app on a rooted device with SuperSu installed.
-##Building the app
+## Building the app
 To build the app simply run this
 ```
 ./gradlew clean
@@ -32,12 +32,12 @@ Note: We use the debug version since we don't care about the ownership and neith
 care about the updating with the same signature, but you can build a release apk and sign that if you
 want.
 
-##Make the app device owner
+## Make the app device owner
 There is a `device_owner.xml` is the root directory of the project, pushing this file to to `/data/system/`
 in the device and giving the right permission to it will make this app a device owner. The benefit
 of this is user  can not disable the app any more. 
 
-##Installing as a system app
+## Installing as a system app
 To install an app as system app you have to place it inside `/system/priv-app` directory, 
 give it a right permission and reboot. <br>
 There is a `install.sh` file in the root directory of the project with shell commands to 
@@ -56,5 +56,5 @@ with Android Studio. You may need to uncomment activity code in the manifest fil
 it inside Android Studio. Note that this will not be possible for all the features.  
 
 
-#Contact
+# Contact
 If you have any other question contact me at `a.ahmadi.dev@gmail.com`, I will be happy to help.
