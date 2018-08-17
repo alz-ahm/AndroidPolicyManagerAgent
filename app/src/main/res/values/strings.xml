@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Servicios Administrativos</string>
+    <string name="message_locaiton_turn_off">Elevadores Mega - No esta permitido desactivar ubicacion. El incidente fue reportado a la empresa.</string>
+</resources>
