@@ -53,7 +53,8 @@ While you're developing, you can change the code and run `sh install.sh` that wi
 however testing shell commands in the app or many other features don't require the app to
 be a system app, So you can simply test it like any other app by normally install it on the device 
 with Android Studio. You may need to uncomment activity code in the manifest file to be able to run
-it inside Android Studio. Note that this will not be possible for all the features.  
+it inside Android Studio. Note that this will not be possible for all the features. <br>
+To see the log you can simply chaned the flag `LOG_ENABLED` in logger file to true. This will help a lot with testing. 
 
 
 # Contact
